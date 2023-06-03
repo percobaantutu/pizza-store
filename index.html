@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Mogra&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/e3a3d029bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="public/img/favicon.ico" image="image/x-icon" />
+    <title>Pizzaro</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link href="public/css/hamburgers.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="bg-slate-50 relative p-2 shadow-lg z-10">
+      <div class="w-full px-2 lg:px-10">
+        <div class="nav-box md:flex items-center justify-center py-3">
+          <div class="logo font-mogra text-4xl text-center sm:text-left flex-1 sm:w-1/5">Pizzaro</div>
+          <div class="absolute right-8 inset-y-7">
+            <button class="hamburger hamburger--squeeze block md:hidden hover:text-red-700 cursor-pointer w-4 h-4" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner before:bg-black after:bg-black w-4 h-4"></span>
+              </span>
+            </button>
+          </div>
+
+          <div class="menu text-xl hidden md:block w-full flex-1">
+            <ul class="listMenu flex flex-col justify-end md:flex-row gap-x-4 absolute md:static top-20 md:top-0 left-0 bg-slate-100 md:bg-transparent w-full md:w-auto text-center">
+              <li class="hover:text-red-700 cursor-pointer py-4 md:py-0"><a href="#home">Home</a></li>
+              <li class="hover:text-red-700 cursor-pointer py-4 md:py-0"><a href="#menu"> Menu</a></li>
+              <li class="whitespace-nowrap overflow-ellipsis py-4 md:py-0 hover:text-red-700 cursor-pointer"><a href="#about"> About us</a></li>
+              <li class="hover:text-red-700 cursor-pointer py-4 md:py-0 flex justify-center items-center"><i class="fa-solid fa-cart-shopping fa-xs mr-3"></i>Cart</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="max-w-full lg:h-screen py-5 flex justify-center items-center"
+      style="
+        background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+      ;
+    >
+      <div class="container flex lg:flex-1 flex-col items-center justify-evenly gap-3 p-3 md:gap-8">
+        <div class="page-tittle text-center p-2">
+          <p class="text-3xl lg:text-4xl mb-4 text-red-500">Pizza shop</p>
+          <blockquote class="font-semibold text-5xl lg:text-6xl">"Food is symbolic of love when words are inadequate"</blockquote>
+        </div>
+        <p class="text-xl lg:text-2xl italic">Extraordinary and authentic pizza</p>
+        <img src="https://www.pngplay.com/wp-content/uploads/2/Top-View-Pizza-PNG-HD-Quality.png" alt="pizza" class="w-44 h-44 md:w-52 md:h-52 lg:hidden" />
+        <a href="#menu"><button class="bg-red-600 w-52 md:w-64 p-3 rounded-lg text-white font-mogra text-xl md:text-2xl tracking-widest">Menu</button></a>
+      </div>
+      <div class="hero-img hidden lg:block flex-1">
+        <div class="hero-container flex justify-center">
+          <img src="https://www.pngplay.com/wp-content/uploads/2/Top-View-Pizza-PNG-HD-Quality.png" alt="pizza" class="w-44 h-44 md:w-60 md:h-60 lg:w-3/5 lg:h-full lg:ml-5" />
+        </div>
+      </div>
+    </header>
+    <section id="home" class="food-menu px-3 py-5 bg-slate-50 lg:h-screen flex justify-center items-center">
+      <div class="container">
+        <div class="container mx-auto my-auto flex flex-col justify-center items-center gap-5">
+          <h2 class="text-2xl font-bold">FOOD MENU</h2>
+          <p class="text-lg italic tracking-wider">Most Favourite Pizza</p>
+          <div class="pizza-menu flex flex-col md:flex-row gap-14 lg:gap-24">
+            <div class="pizza-detail">
+              <img src="https://www.pngkit.com/png/full/2-20221_pizza-png-image-pizza-seafood-png-top-view.png" alt="pizza" class="w-48 h-48" />
+              <p class="text-center text-xl text font-semibold text-red-700 mt-3">Paprika Pizza</p>
+            </div>
+            <div class="pizza-detail">
+              <img src="https://pngimg.com/d/pizza_PNG7149.png" alt="pizza" class="w-48 h-48" />
+              <p class="text-center text-xl font-semibold text-red-700 mt-3">Vegetable Pizza</p>
+            </div>
+            <div class="pizza-detail">
+              <img src="https://www.freeiconspng.com/thumbs/pizza-png/pizza-png-15.png" alt="pizza" class="w-48 h-48" />
+              <p class="text-center text-xl font-semibold text-red-700 mt-3">Mushroom Pizza</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-paragraph mt-14 flex flex-col md:flex-row gap-16">
+          <div class="paragraph-one px-16 md:px-10 text-left">
+            <h3 class="text-2xl font-semibold mb-6">We Provide Premium Pizza</h3>
+            <p class="text-base text-slate-700">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias fugit minus nobis provident qui ipsam, voluptas minima distinctio laborum cupiditate assumenda, doloribus officia quia asperiores voluptatibus consequatur autem
+            </p>
+          </div>
+          <div class="paragraph-two px-16 md:px-10 text-left">
+            <h3 class="text-2xl font-semibold mb-6">Fresh from The Oven</h3>
+            <p class="text-base text-slate-700">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, voluptas perferendis sint, deleniti odit sequi mollitia error quos dolorem impedit eaque. Nostrum, asperiores. Quos est eaque cum itaque reiciendis impedit.
+              Exercitationem enim quas dicta. Debitis voluptate incidunt consequuntur necessitatibus voluptas!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pizza-detail">
+      <div class="p-7">
+        <div class="pizza-detail-one px-16 md:px-10 flex flex-col md:flex-row items-center">
+          <div class="flex">
+            <img src="public/img/src1.png" alt="lemonade" class="min-w-[256px] max-w-[350px] h-72 md:h-auto m-auto" />
+          </div>
+          <div class="pizza-text mt-10 mx-auto">
+            <h3 class="text-xl font-semibold">Lemonade and Tea Wine</h3>
+            <p class="text-base mt-5 text-slate-700 lg:max-w-[450px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nam dicta omnis sed, quis, totam atque odio reiciendis quia consequatur ducimus odit fugiat. Quibusdam necessitatibus sunt, ducimus atque vitae quasi dolor odit
+              expedita est tenetur?
+            </p>
+            <button class="text-left mt-5 text-base">View details</button>
+          </div>
+        </div>
+        <div class="pizza-detail-two p-16 md:p-10 flex flex-col md:flex-row-reverse items-center">
+          <img src="public/img/src2.jpg" alt="lemonade" class="w-56 h-80 sm:min-w-[256px] sm:max-w-[350px] md:h-auto mx-auto" />
+          <div class="pizza-text mt-10 mx-auto">
+            <h3 class="text-xl font-semibold">Fresh Orange Juice</h3>
+            <p class="text-base mt-5 text-slate-700 lg:max-w-[450px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nam dicta omnis sed, quis, totam atque odio reiciendis quia consequatur ducimus odit fugiat. Quibusdam necessitatibus sunt, ducimus atque vitae quasi dolor odit
+              expedita est tenetur?
+            </p>
+            <button class="text-left mt-5 text-base">View details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="menu">
+      <div class="container mx-auto sm:px-1 px-3 pt-10">
+        <p class="text-center text-red-500 m-5 text-xl">Our Complete Menu</p>
+        <h3 class="text-center font-semibold text-4xl mb-10 tracking-wider">Pizza Variants</h3>
+        <div class="container w-full flex flex-col sm:flex-row flex-wrap gap-4 justify-evenly">
+          <div class="md:w-[30%] w-full h-auto mb-8 group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="public/img/src3.png" alt="pngimg.com" class="w-11/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="lg:text-lg text-sm text-red-700 tracking-wider">Blueberry Pizza</p>
+              <p class="font-semibold tracking-wider">Rp 150.000</p>
+            </div>
+          </div>
+          <div class="md:w-[30%] w-full h-auto mb-8 group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="public/img/src4.png" alt="pngimg.com" class="w-10/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="lg:text-lg text-sm text-red-700 tracking-wider">Blueberry and Bacon Pizza</p>
+              <p class="font-semibold tracking-wider">Rp 200.000</p>
+            </div>
+          </div>
+          <div class="md:w-[30%] w-full h-auto mb-8 group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="public/img/src5.png" alt="pngimg.com" class="w-10/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="lg:text-lg text-sm text-red-700 tracking-wider">Tomato and Seaweed Pizza</p>
+              <p class="font-semibold tracking-wider">Rp 99.000</p>
+            </div>
+          </div>
+          <div class="md:w-[30%] w-full h-auto mb-8 group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="public/img/src6.png" alt="pngimg.com" class="w-10/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="text-lg text-red-700 tracking-wider">Pepperoni Pizza</p>
+              <p class="font-semibold tracking-wider">Rp 125.000</p>
+            </div>
+          </div>
+          <div class="md:w-[30%] w-full h-auto mb-8 group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="public/img/src7.png" alt="pngimg.com" class="w-10/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="text-lg text-red-700 tracking-wider">Ham sauce Pizza</p>
+              <p class="font-semibold tracking-wider">Rp 150.000</p>
+            </div>
+          </div>
+          <div class="md:w-[30%] w-full h-auto mb-8 group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="public/img/src8.png" alt="pngimg.com" class="w-10/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="text-lg text-red-700 tracking-wider">Paprika Sausage Pizza</p>
+              <p class="font-semibold tracking-wider">Rp 175.000</p>
+            </div>
+          </div>
+
+          <div class="md:w-[30%] w-full h-auto mb-8 hidden-menu hidden group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="https://www.pizzahut.co.id/assets/images/digital_menu/phr/appetizer/cheese-martabak-pizza.png" alt="pngimg.com" class="w-10/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="text-lg text-red-700 tracking-wider">Cheese Martabak</p>
+              <p class="font-semibold tracking-wider">Rp 119.000</p>
+            </div>
+          </div>
+          <div class="md:w-[30%] w-full h-auto mb-8 hidden-menu hidden group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="https://www.pizzahut.co.id/assets/images/digital_menu/phr/appetizer/nacho-cheese.png" alt="pngimg.com" class="w-10/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="text-lg text-red-700 tracking-wider">Cheese Taco</p>
+              <p class="font-semibold tracking-wider">Rp 35.000</p>
+            </div>
+          </div>
+          <div class="md:w-[30%] w-full h-auto mb-8 hidden-menu hidden group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="https://www.pizzahut.co.id/assets/images/digital_menu/phr/appetizer/deluxe-chicken-bruschetta.png" alt="pngimg.com" class="w-10/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="text-lg text-red-700 tracking-wider">Bread Chicken</p>
+              <p class="font-semibold tracking-wider">Rp 60.000</p>
+            </div>
+          </div>
+          <div class="md:w-[30%] w-full h-auto mb-8 hidden-menu hidden group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="https://www.pizzahut.co.id/assets/images/digital_menu/phr/drinks/blue-ocean.png" alt="pngimg.com" class="w-10/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="text-lg text-red-700 tracking-wider">Blue Mojito</p>
+              <p class="font-semibold tracking-wider">Rp 25.000</p>
+            </div>
+          </div>
+          <div class="md:w-[30%] w-full h-auto mb-8 hidden-menu hidden group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="https://www.pizzahut.co.id/assets/images/digital_menu/phr/drinks/orange-lychee-sparkle.png" alt="pngimg.com" class="w-10/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="text-lg text-red-700 tracking-wider">Tropical Juice</p>
+              <p class="font-semibold tracking-wider">Rp 30.000</p>
+            </div>
+          </div>
+          <div class="md:w-[30%] w-full h-auto mb-8 hidden-menu hidden group">
+            <div class="h-4/5 flex justify-center items-center pizza-list transform-preserve group">
+              <img src="https://www.pizzahut.co.id/assets/images/digital_menu/phr/drinks/tropical-punch.png" alt="pngimg.com" class="w-10/12 group-hover:transform3d" />
+            </div>
+            <div class="mt-5 pb-3 border-b-2 group-hover:border-red-700">
+              <p class="text-lg text-red-700 tracking-wider">Lychee Sparkle</p>
+              <p class="font-semibold tracking-wider">Rp 35.000</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn-menu bg-red-600 w-52 md:w-64 p-2 rounded-lg text-white font-mogra text-lg md:text-xl tracking-widest sm:mt-20 mt-14 mx-auto block">View all menu</button>
+      </div>
+    </section>
+    <section class="w-full md:h-[500px] h-screen mt-20" style="background-image: url(public/img/src9.png); background-repeat: no-repeat; background-size: cover">
+      <div class="content sm:w-1/2 w-full h-full p-4 flex flex-col items-start justify-center md:gap-5 gap-9">
+        <p class="text-2xl font-semibold">Pizzaro pizza shop</p>
+        <h2 class="text-4xl font-semibold">Ready to eat Pizza ?</h2>
+        <p class="text-xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias reiciendis saepe libero sunt facere illo?</p>
+        <button class="p-3 bg-red-700 text-white">New Arrival Menus</button>
+      </div>
+    </section>
+    <section class="w-full flex p-20">
+      <div class="m-auto sm:w-11/12 px-4">
+        <div class="flex flex-col h-4/5 justify-center items-center gap-9 lg:gap-20">
+          <span class="bg-red-700 w-20 h-20 flex rounded-full"><i class="fa-regular fa-paper-plane fa-2xl m-auto" style="color: #ffffff"></i></span>
+          <p class="text-red-400 text-xl lg:text-2xl uppercase">Latest News</p>
+          <h2 class="text-2xl lg:text-4xl font-semibold text-center tracking-widest leading-loose">
+            Latest News <span><i class="fa-regular fa-newspaper fa-2xl" style="color: #e21203"></i></span> News Update
+          </h2>
+          <div class="flex flex-col sm:flex-row gap-2 sm:gap-1 w-full md:w-4/6 max-w-xl">
+            <label class="relative block sm:flex-auto">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-2"><i class="fa-solid fa-envelope fa-xl" style="color: #64748b"></i></span>
+              <input type="text" class="placeholder:italic placeholder:text-slate-400 block bg-white py-2 pl-9 pr-3 w-full border border-slate-300 rounded p-3" placeholder="Enter your email" />
+            </label>
+            <button class="bg-gray-950 p-2 rounded text-white uppercase flex-1">subscribe</button>
+          </div>
+          <div>
+            <input type="checkbox" id="checkbox" class="lg:w-5 lg:h-5" />
+            <label for="checkbox" class="lg:text-xl text-slate-600">Sign up for our newsletter</label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-slate-50 border-b-2 border-gray-300" id="about">
+      <div class="px-7 py-20 text-center">
+        <h2 class="font-mogra text-4xl text-center mb-8">Pizzaro</h2>
+        <p class="text-base text-center text-slate-600 mb-14 max-w-md mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cumque quam numquam dolorum labore ratione.</p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-10 lg:gap-32 text-slate-600 text-center">
+          <div class="flex flex-col justify-center items-center gap-6">
+            <i class="fa-solid fa-envelope fa-2xl" style="color: #64748b"></i>
+            <p class="">EMAIL</p>
+            <p>pizzaropizza@gmail.com</p>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-6">
+            <i class="fa-solid fa-location-dot fa-2xl" style="color: #64748b"></i>
+            <p>FIND</p>
+            <p>Gatot Subroto, Bandung, Jawa barat, 40111</p>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-6">
+            <i class="fa-solid fa-phone-volume fa-2xl" style="color: #64748b"></i>
+            <p>CALL</p>
+            <p>+62 2128459689</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-slate-100 p-7 text-center text-sm text-slate-600 tracking-widest">
+      <p>Powered by <a href="" class="text-black">Studio22</a></p>
+    </footer>
+
+    <script src="public/javascript/script.js"></script>
+    <script type="text/javascript" src="public/javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".pizza-list"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+  </body>
+</html>
